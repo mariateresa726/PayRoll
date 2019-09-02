@@ -10,7 +10,7 @@
 
  {
        
-        var leaves = document.getElementById("leaves").value;
+        var leaves = document.getElementById("Leaves").value;
          var maxLeave = 20;
         if (leaves > 0 && leaves <=maxLeave)
         {
@@ -20,18 +20,18 @@
             var Pay_loss = (document.getElementById("TotalSal").value) / maxLeave;
             var res = leaves * Pay_loss;
             var z = document.getElementById("TotalSal").value - res;
-            document.getElementById("salary").value = z;
+            document.getElementById("Salary").value = z;
         }
         else if (leaves>=20)
         {
-           document.getElementById("leaves").value = 20;
+           document.getElementById("Leaves").value = 20;
         }
         else
         {
             console.log('leaves:'+leaves);
-            document.getElementById("leaves").value = 0;
+            document.getElementById("Leaves").value = 0;
             var totalSal = document.getElementById("TotalSal").value;
-            document.getElementById("salary").value = totalSal;
+            document.getElementById("Salary").value = totalSal;
            
         }
         
